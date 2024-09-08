@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  text-decoration: none;
+  color: white;
+  }
+  body{
+    background-color: black;
+    margin: 0px;
+    padding: 0;
+
+  }
+  .muka{
+    border: 100%;
+    border-width: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    border-color: #00ffff;
+    margin: auto;
+  }
+  
+  header {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    background-color: black;
+    display: flex;
+    margin: 0 auto;
+    border-width: 5px;
+  }
+  h1{
+    padding: 30px;
+    font-size: 50px;
+  }
+  .tulisan{
+    display: flex;
+    width: 100%;
+    border-collapse: collapse;
+    padding-top: 100px;
+  }
+  .mukaku{
+    display: flex;
+    align-items: center;
+
+  }
+  .maintablee{
+  width: 100%;
+  border-collapse: collapse;
+  padding: 5px;
+  border-color: #00ffff;
+  border-width: 5px;
+  border-radius: 100px;
+  border-style: ridge;
+  }
+  .maintablee2{
+  border-color: #00ffff;
+  border-width: 5px;
+  width: 100%;
+  align-items: center;
+  border-collapse: collapse;
+  justify-content: center;
+  
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+  .img1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-width: 5px;
+    margin-left: 50%;
+    margin: 0 auto;
+    border-color: #00ffff;
+    border-radius: 15px;
+  }
+  .img2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-width: 5px;
+    margin: 0 auto;
+    border-color: #00ffff;
+    border-radius: 15px;
+
+
+  }
+  main {
+ justify-content: center;
+  width: fit-content;
+  border-collapse: collapse;
+  padding-left: 50px;
+  padding-right: 50px;
+  }
+
+  main .main_title {
+  margin-bottom: 36px;
+  text-align: center;
+  }
+
+  main .main_title span {
+  color: rgb(212 212 216);
+  }
+
+  main ul {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+  }
+
+  main ul li figure.card {
+  border: solid 1px #00ffff;
+  border-radius: 12px;
+  padding: 1rem;
+  }
+
+  main ul li figure.card .card_header {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  }
+
+  main ul li figure.card .card_header .card_image {
+  width: 128px;
+  height: 128px;
+  border: solid 1px #00ffff;
+  overflow: hidden;
+  border-radius: 12px;
+  }
+
+  main ul li figure.card .card_header .card_image img {
+  margin-top: -12px;
+  }
+
+  main ul li figure.card .card_header .card_description {
+  font-weight: 600;
+  }
+
+  main ul li figure.card .card_header .card_description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  }
+
+  main ul li figure.card .card_header .card_description span:last-child {
+  color: rgb(212 212 216);
+  font-family: monospace;
+  }
+
+  main ul li figure.card .card_content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-top: 20px;
+  }
+ /* Responsive Design */
+  /* Tablet */
+  @media screen and (min-width: 768px) {
+    /* Header */
+    header figure {
+      justify-content: space-between;
+    }
+  
+    header figure img {
+      order: 2;
+      width: 12rem;
+    }
+    
+    header figure figcaption {
+      order: 1;
+    }
+  
+    header figure figcaption span:first-child {
+      font-size: 3.75rem;
+      line-height: 1;
+    }
+  
+    header figure figcaption span:last-child {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+  
+  
+    /* Main */
+    main .main_title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 1rem;
+    }
+  
+    main .main_title h2 {
+      font-size: 32px;
+    }
+  
+    main .main_title span {
+      font-size: 20px;
+    }
+  
+    main ul {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    main ul li figure.card .card_header .card_description span:first-child {
+      font-size: 20px;
+    }
+  }
+  
+  
+  /* Laptop */
+  @media screen and (min-width: 1024px) {
+    /* Header */
+    header figure img {
+      width: 14rem;
+    }
+  
+  
+    /* Main */
+    main ul {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
